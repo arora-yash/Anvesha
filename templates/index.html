@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<title>Anvesha</title>
+	<head>
+		<link rel='shortcut icon' type='image/x-icon' href='https://user-images.githubusercontent.com/20112458/49326597-773b7280-f57a-11e8-853d-20ed61d18b0d.png' />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+		body
+		{
+				font-family: monospace;
+		}
+		h1
+		{
+					display:inline-block;
+					font-size:3em;
+					margin:0;
+					padding:14px;
+					font-weight:lighter;
+					letter-spacing: 1px;
+					color:#444;
+			}
+		h3
+		{
+			color: #000;
+			font-size: 20px;
+			margin-top: 3px;
+			text-align: center;
+		}
+		#chatBox
+		{
+				margin-left: auto;
+				margin-right: auto;
+				width: 40%;
+				margin-top: 60px;
+		}
+		#userInput
+		{
+				margin-left: auto;
+				margin-right: auto;
+				width: 40%;
+				margin-top: 60px;
+		}
+		#textInput
+		{
+				width: 90%;
+				border: none;
+				border-bottom: 3px solid black;
+				font-family: monospace;
+				font-size: 17px;
+		}
+		.userText
+		{
+				color: white;
+				font-family: monospace;
+				font-size: 17px;
+				text-align: right;
+				line-height: 30px;
+		}
+		.userText span
+		{
+				background-color: #808080;
+				padding: 10px;
+				border-radius: 2px;
+		}
+		.botText
+		{
+				color: white;
+				font-family: monospace;
+				font-size: 17px;
+				text-align: left;
+				line-height: 30px;
+		}
+		.botText span
+		{
+				background-color: #4169e1;
+				padding: 10px;
+				border-radius: 2px;
+		}
+		.boxed
+		{
+			margin-left: auto;
+			margin-right: auto;
+				width: 78%;
+				margin-top: 30px;
+				margin-bottom: 40px;
+				border: 1px solid green ;
+		}
+		.box
+		{
+			border: 2px solid black;
+		}
+
+#textInput{
+  padding: 10px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow:none;
+  border:none;
+}
+#textInput:focus{
+   outline: none;
+}
+
+
+.boxed{
+  background-image:url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Background.2e16d0ba.fill-1422x800.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.header
+{
+  align-content: center;
+  justify-content:space-between;
+  margin-top:20px;
+}
+.box-1{
+  text-align: center;
+}
+
+.boxed{
+  background-color: #eee;
+  box-shadow: 1.5px 1.5px 0px 0px #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .container , .darker{
+    width:100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header{
+    flex-direction: row;
+  }
+}
+/* Chat containers */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width:40%;
+    margin-left:5%;
+}
+
+/* Darker chat container */
+.darker {
+    border: 2px solid #dedede;
+    border-color: #ccc;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width:40%;
+    margin-left:45%;
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container img ,.darker img{
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.darker img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+    padding:0;
+    height: inherit;
+    margin-top:-10px;
+}
+#userInput{
+  margin-bottom: 20px;
+  width:250px;
+}
+body{
+  background-color: #eee;
+}
+h3 p a{
+  color:#69a6e8;
+  text-decoration: none;
+}
+.innerText{
+  font-weight:lighter;
+
+}
+.header-img{
+  width:50px;
+  height:50px;
+  margin-right:10px;
+  padding-top:10px;
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+				<div class="box-2">
+				<center><h1><img src="https://static1.squarespace.com/static/58f645cae58c62dbeca6bc2c/t/5bac18ac1905f4689fd0a729/1538004789267/SmartBot360+logo+icon+1024.png?format=300w" alt="bot-img" class="header-img">ANVESHA</h1></center>
+				<h3>
+					<p class="innerText">Your Personal ChatBot</p>
+					<p>Like this? ❤️ Give a star on <a href="https://www.github.com/arora-yash/Anvesha">GitHub</a>.</p>
+		    </h3>
+				</div>
+		</div>
+		<div class="box-1">
+			<img src="https://mk0drift0ho9g7wbfexi.kinstacdn.com/wp-content/uploads/migration/chatbots-types-1.png" alt="chatBot image"  >
+		</div>
+    	<div class="boxed">
+    		<div id="chatBox">
+	    		<div class="container">
+	    			<img src="https://static1.squarespace.com/static/58f645cae58c62dbeca6bc2c/t/5bac18ac1905f4689fd0a729/1538004789267/SmartBot360+logo+icon+1024.png?format=300w" alt="ANVESHA" style="width:40px;height:40px;">
+	        		<p><span>Hi! I'm Anvesha  your personal ChatBot ❤️</span></p>
+	      		</div>
+	    	</div>
+				<div id="userInput">
+					<input id="textInput" type="text" name="msg" placeholder="Enter Message..........">
+				</div>
+			</div>
+	    	<script>
+        		function getBotResponse()
+        		{
+            		var rawText = $("#textInput").val();
+            		var userHtml = '<div class="darker"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZVJUDi_52QGaMV8kVq2dzi1W1_0BMQhsPlW-uaMAXaPeytha2" alt="Avatar" class="right"><p><span>' + rawText + '</span></p></div>';
+            		$("#textInput").val("");
+            		$("#chatBox").append(userHtml);
+            		document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            		$.get("/get", { msg: rawText }).done(function(data)
+            		{
+              			var botHtml = '<div class="container"><img src="https://static1.squarespace.com/static/58f645cae58c62dbeca6bc2c/t/5bac18ac1905f4689fd0a729/1538004789267/SmartBot360+logo+icon+1024.png?format=300w" alt="ANVESHA"><p><span>' + data + '</span></p></div>';
+              			$("#chatBox").append(botHtml);
+              			document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            		});
+        		}
+        		$("#textInput").keypress(function(e)
+        		{
+            		if(e.which == 13)
+            		{
+                		getBotResponse();
+            		}
+        		});
+      		</script>
+	    </div>
+	</body>
+</html>
