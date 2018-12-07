@@ -1,0 +1,5 @@
+WebApp - app.py
+
+Python => 3.7.1
+Flask => 0.11
+ChatterBot => 0.7.1
